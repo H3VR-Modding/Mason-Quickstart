@@ -1,0 +1,21 @@
+{
+	"json.schemas": [
+		{
+			"url": "https://raw.githubusercontent.com/ash-hat/thunderstore.manifest/main/v1/schema.json",
+			"fileMatch": [
+				"/manifest.json"
+			]
+		}
+	],
+	"yaml.schemas": {
+		"https://raw.githubusercontent.com/H3VR-Modding/Mason/v1.0.0/schemas/project.json": "/project.yaml",
+		"https://raw.githubusercontent.com/H3VR-Modding/Mason/v1.0.0/schemas/config.json": "/.config.yaml"
+	},
+	"cSpell.words": [
+		"DELETEME",
+		"Quickstart",
+		"Thunderstore",
+		"bepinex",
+		"modman"
+	]
+}

@@ -1,0 +1,63 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "build bootstrap.dll",
+			"type": "shell",
+			"command": "mason build -c .config.yaml -o output/bootstrap.dll",
+			"group": "build",
+			"presentation": {
+				"echo": true,
+				"reveal": "never",
+				"focus": false,
+				"panel": "shared",
+				"showReuseMessage": true,
+				"clear": false,
+				"revealProblems": "onProblem"
+			},
+			"problemMatcher": {
+				"owner": "mason",
+				"fileLocation": "relative",
+				"pattern": {
+					"regexp": "^(warning|error) at (.+?)\\((\\d+),(\\d+)(?:-(\\d+),(\\d+))?\\): (.*)$",
+					"file": 2,
+					"line": 3,
+					"column": 4,
+					"endLine": 5,
+					"endColumn": 6,
+					"severity": 1,
+					"message": 7
+				}
+			}
+		},
+		{
+			"label": "pack Thunderstore mod",
+			"type": "shell",
+			"command": "mason pack -c .config.yaml -o output/package.zip",
+			"group": "build",
+			"presentation": {
+				"echo": true,
+				"reveal": "never",
+				"focus": false,
+				"panel": "shared",
+				"showReuseMessage": true,
+				"clear": false,
+				"revealProblems": "onProblem"
+			},
+			"problemMatcher": {
+				"owner": "mason",
+				"fileLocation": "relative",
+				"pattern": {
+					"regexp": "^(warning|error) at (.+?)\\((\\d+),(\\d+)(?:-(\\d+),(\\d+))?\\): (.*)$",
+					"file": 2,
+					"line": 3,
+					"column": 4,
+					"endLine": 5,
+					"endColumn": 6,
+					"severity": 1,
+					"message": 7
+				}
+			}
+		}
+	]
+}

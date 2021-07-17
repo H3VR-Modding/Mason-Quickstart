@@ -1,0 +1,10 @@
+{
+	"author": "TestAuthor",
+	"name": "TestMod",
+	"version_number": "1.1.0",
+	"dependencies": [
+		"AshHat-TestDependency-1.0.0"
+	],
+	"description": "Hello world",
+	"website_url": "https://example.com/"
+}
