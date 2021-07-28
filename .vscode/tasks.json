@@ -19,14 +19,15 @@
 				"owner": "mason",
 				"fileLocation": "relative",
 				"pattern": {
-					"regexp": "^(warning|error) at (.+?)\\((\\d+),(\\d+)(?:-(\\d+),(\\d+))?\\): (.*)$",
+					"regexp": "^(warning|error) at (.+?)\\((\\d+),(\\d+)(?:-(\\d+),(\\d+))?\\): \\[([SCP]\\d+)\\](.*)$",
+					"severity": 1,
 					"file": 2,
 					"line": 3,
 					"column": 4,
 					"endLine": 5,
 					"endColumn": 6,
-					"severity": 1,
-					"message": 7
+					"code": 7,
+					"message": 8
 				}
 			}
 		},
@@ -48,14 +49,15 @@
 				"owner": "mason",
 				"fileLocation": "relative",
 				"pattern": {
-					"regexp": "^(warning|error) at (.+?)\\((\\d+),(\\d+)(?:-(\\d+),(\\d+))?\\): (.*)$",
+					"regexp": "^(warning|error) at (.+?)\\((\\d+),(\\d+)(?:-(\\d+),(\\d+))?\\): \\[([SCP]\\d+)\\](.*)$",
+					"severity": 1,
 					"file": 2,
 					"line": 3,
 					"column": 4,
 					"endLine": 5,
 					"endColumn": 6,
-					"severity": 1,
-					"message": 7
+					"code": 7,
+					"message": 8
 				}
 			}
 		}
