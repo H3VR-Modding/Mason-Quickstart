@@ -1,3 +1,3 @@
 directories:
-  bepinex: references/bepinex
-  managed: references/managed
+  bepinex: .references/bepinex
+  managed: .references/managed
